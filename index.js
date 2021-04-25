@@ -154,7 +154,7 @@ function generateHtml(member) {
 </body>
 </html>`;
     } else {
-        // if (role === "Manager")
+        // if (role === "Manager") allows to go through the entire prompt
       const officePhone = member.getOfficeNumber();
       html = `<div class="col-6">
         <div class="card mx-auto mb-3" style="width: 18rem">
@@ -185,87 +185,3 @@ function generateHtml(member) {
   });
 }
 init();
-// function finishHtml() {
-// const html = ` </div>
-// </div>
-
-// </body>
-// </html>`;
-
-// fs.appendFile("./template/main.html", html, function (err) {
-//     if (err) {
-//         console.log(err);
-//     };
-// });
-// console.log("Successfully generatorated Team Profile!");
-// }
-
-
-// const generateHTML = (answers) =>
-//   `<!DOCTYPE html>
-//   <html lang="en">
-//   <head>
-//       <meta charset="UTF-8">
-//       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-//       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-//       <title>Team Profile Generator</title>
-//   </head>
-//   <body>
-//       <div class="container" id="team">
-//           <div class="row">
-//               <div class="col-12 text-center bg-info my-5 py-5 display-4 text-white">My Team</div>
-//           </div>
-//           <div class="row" id="cards">
-//           </div>
-//       </div>
-//       <div class="container">
-//           <div class="row"><div class="col-6">
-//           <div class="card mx-auto mb-3" style="width: 18rem">
-//           <h5 class="card-header">${answers.name}<br /><br />Manager</h5>
-//           <ul class="list-group list-group-flush">
-//               <li class="list-group-item">ID: ${answers.id}</li>
-//               <li class="list-group-item">Email Address: ${answers.email}</li>
-//               <li class="list-group-item">Office Number: </li>
-//           </ul>
-//           </div>
-//       </div><div class="col-6">
-//           <div class="card mx-auto mb-3" style="width: 18rem">
-//           <h5 class="card-header">${answers.name}<br /><br />Engineer</h5>
-//           <ul class="list-group list-group-flush">
-//               <li class="list-group-item">ID: ${answers.id}</li>
-//               <li class="list-group-item">Email Address: ${answers.email}</li>
-//               <li class="list-group-item">GitHub Username: </li>
-//           </ul>
-//           </div>
-//       </div><div class="col-6">
-//           <div class="card mx-auto mb-3" style="width: 18rem">
-//           <h5 class="card-header">${answers.name}<br /><br />Intern</h5>
-//           <ul class="list-group list-group-flush">
-//               <li class="list-group-item">ID: ${answers.id}</li>
-//               <li class="list-group-item">Email Address: ${answers.email}</li>
-//               <li class="list-group-item">School: </li>
-//           </ul>
-//           </div><div class="col-6">
-//           <div class="card mx-auto mb-3" style="width: 18rem">
-//           <h5 class="card-header">${answers.name}<br /><br />Intern</h5>
-//           <ul class="list-group list-group-flush">
-//               <li class="list-group-item">ID: ${answers.id}</li>
-//               <li class="list-group-item">Email Address: ${answers.email}</li>
-//               <li class="list-group-item">School: </li>
-//           </ul>
-//           </div>
-//   </div>
-
-// </body>
-// </html>
-// `;
-
-// const init = () => {
-//   addMember()
-//     .then((answers) => writeFileAsync('./template/main.html', generateHTML(answers)))
-//     .then(() => console.log('Successfully created a Team Profile!'))
-//     .catch((err) => console.error(err));
-// };
-
-// init();

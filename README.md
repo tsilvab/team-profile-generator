@@ -19,3 +19,5 @@ Jest for running unit tests
 
 Github: tsilvab
 https://github.com/tsilvab/team-profile-generator.git
+walkthrough video:
+https://drive.google.com/file/d/16ZnH9VhO8pjsyigZ6iCckX0Z5F9mSSZx/view
