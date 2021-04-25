@@ -1,5 +1,5 @@
 # team-profile-generator
-This a command-line application taht accepts user input with prompts. The prompts are questions about team memebers information. The roles of an employee includes, Manager, Engineer or Intern. After completing all inputs, an HTML file is generated and displayed in a formatted team roster. You will find the output of the application in main.html located in the template folder.
+This a command-line application taht accepts user input with prompts. The prompts are questions about team memebers information. The roles of an employee includes, Manager, Engineer or Intern. After completing all inputs, an HTML file is generated and displayed in a formatted team roster. You will find the output of the application in Main.html located in the template folder.
 ## User Story
 As a manager
 I WANT to generate a webpage that displays my team's basic info
