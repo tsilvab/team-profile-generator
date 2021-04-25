@@ -58,7 +58,7 @@ function addEmployee() {
           },
         ])
         .then(function ({ roleInfo, moreEmployees }) {
-          let newMember;
+            let newMember = "";
           if (role === "Engineer") {
             newMember = new Engineer(name, id, email, roleInfo);
           } else if (role === "Intern") {
@@ -154,6 +154,7 @@ function generateHtml(member) {
 </body>
 </html>`;
     } else {
+        // if (role === "Manager")
       const officePhone = member.getOfficeNumber();
       html = `<div class="col-6">
         <div class="card mx-auto mb-3" style="width: 18rem">
