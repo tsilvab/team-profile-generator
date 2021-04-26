@@ -1,3 +1,5 @@
+![Screenshot (2)](https://user-images.githubusercontent.com/78382681/115981806-9e88a500-a564-11eb-9cb6-858f2d2550fe.png)
+![Screenshot (1)](https://user-images.githubusercontent.com/78382681/115981814-a8aaa380-a564-11eb-9569-8769fb7308da.png)
 # team-profile-generator
 This a command-line application taht accepts user input with prompts. The prompts are questions about team memebers information. The roles of an employee includes, Manager, Engineer or Intern. After completing all inputs, an HTML file is generated and displayed in a formatted team roster. You will find the output of the application in Main.html located in the template folder.
 ## User Story
