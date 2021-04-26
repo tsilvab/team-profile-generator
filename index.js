@@ -96,7 +96,7 @@ function myTeamHeader() {
            <div class="row" id="cards">
         </div>
        </div>`;
-  fs.writeFile("./template/main.html", header, function (err) {
+  fs.writeFile("./output/Main.html", header, function (err) {
     if (err) {
       console.log(err);
     }
@@ -153,7 +153,7 @@ function generateHtml(member) {
 
 </body>
 </html>`;
-    } else {
+    } else if (role === "Manager") {
         // if (role === "Manager") allows to go through the entire prompt
       const officePhone = member.getOfficeNumber();
       html = `<div class="col-6">
@@ -175,7 +175,7 @@ function generateHtml(member) {
 </body>
 </html>`;
     }
-    fs.appendFile("./template/Main.html", html, function (err) {
+    fs.appendFile("./output/Main.html", html, function (err) {
       if (err) {
         return reject(err);
       }
